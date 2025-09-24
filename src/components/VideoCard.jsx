@@ -14,15 +14,17 @@ const VideoCard = ({ videoSrc, thumbnail, title, description, tag }) => {
     <div className="bg-[#5E7141] text-white rounded-2xl overflow-hidden mb-12">
       <div className="relative w-full rounded-2xl overflow-hidden">
         {isMobile ? (
+          // ✅ Mobile: show poster + controls (no autoplay issues)
           <video
             src={videoSrc}
-            muted
-            autoPlay
-            loop
+            poster={thumbnail}
+            controls
             playsInline
+            preload="metadata"
             className="w-full h-[300px] md:h-[400px] object-cover"
           />
         ) : (
+          // ✅ Desktop: hover to play
           <video
             src={videoSrc}
             muted
@@ -41,15 +43,15 @@ const VideoCard = ({ videoSrc, thumbnail, title, description, tag }) => {
 
       {/* Content */}
       <div className="p-6">
-        {/* Title + Tag aligned */}
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-xl md:text-2xl font-semibold">{title}</h3>
           <span className="bg-black text-white text-sm px-3 py-1 rounded-full ml-4">
             {tag}
           </span>
         </div>
-
-        <p className="text-sm md:text-base text-gray-200 font-extralight">{description}</p>
+        <p className="text-sm md:text-base text-gray-200 font-extralight">
+          {description}
+        </p>
       </div>
     </div>
   );
