@@ -1,9 +1,23 @@
 import React from "react";
-import { motion } from "framer-motion"; // 👈 Import framer-motion
+import { motion } from "framer-motion";
 import bottle from "../assets/bottle.png";
 import heroBg from "../assets/Rectangle 1.png";
 
 const Hero = () => {
+  const whatsappNumber = "919876543210"; // ✅ replace with your number
+
+  // Smooth scroll to ProductSection
+  const handleExploreClick = () => {
+    const section = document.getElementById("products");
+    if (section) {
+      const yOffset = -100; // adjust for navbar
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       className="w-full rounded-3xl shadow-lg mt-24 px-6 md:px-16 py-12 md:py-16 flex flex-col md:flex-row items-center justify-between overflow-hidden"
@@ -34,12 +48,23 @@ const Hero = () => {
         </p>
 
         <div className="flex space-x-4 sm:space-x-6 pt-6">
-          <button className="bg-white text-black text-sm sm:text-base md:text-lg font-extralight px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg shadow hover:bg-gray-200 transition cursor-pointer">
+          {/* Explore More scrolls to Product Section */}
+          <button
+            onClick={handleExploreClick}
+            className="bg-white text-black text-sm sm:text-base md:text-lg font-extralight px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg shadow hover:bg-gray-200 transition cursor-pointer"
+          >
             Explore More
           </button>
-          <button className="bg-white/10 text-white text-sm sm:text-base md:text-lg font-extralight px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg shadow hover:bg-green-700 transition cursor-pointer">
+
+          {/* WhatsApp Enquiry */}
+          <a
+            href={`https://wa.me/${9208468980}?text=Hi, I want to know more about your products`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/10 text-white text-sm sm:text-base md:text-lg font-extralight px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg shadow hover:bg-green-700 transition cursor-pointer"
+          >
             Whatsapp Enquiry
-          </button>
+          </a>
         </div>
       </motion.div>
 

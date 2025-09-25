@@ -28,13 +28,13 @@ const Footer = () => {
               परम्परा की ताकत, हर बूंद में सेहत
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="#">
+              <a href="https://www.facebook.com/p/Pashupati-Food-Agro-61580472700293/">
                 <FaFacebookF size={22} className="hover:text-blue-600" />
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com/@PASHUPATIFOOD">
                 <FaYoutube size={22} className="hover:text-red-500" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/pashupati_food_agro/">
                 <FaInstagram size={22} className="hover:text-pink-500" />
               </a>
             </div>
@@ -46,11 +46,13 @@ const Footer = () => {
               <FaEnvelope /> <span>pashupatifood25@gmail.com</span>
             </div>
             <div className="flex items-center gap-3 font-light">
-              <FaMapMarkerAlt />
+           <a href="" className="flex items-center gap-3 font-light">
+           <FaMapMarkerAlt />
               <span>
                 SECTOR-1, CMS ROAD, GOMTI NAGAR VISTAR, <br />
                 LUCKNOW, UTTAR PRADESH, 226010
               </span>
+           </a>
             </div>
             <div className="flex items-center gap-3 font-light">
               <FaWhatsapp className="text-green-500" />
@@ -63,7 +65,7 @@ const Footer = () => {
             <a href="#" className="hover:underline">
               Home
             </a>
-            <a href="#" className="hover:underline">
+            <a href="/about" className="hover:underline">
               About Us
             </a>
           </div>

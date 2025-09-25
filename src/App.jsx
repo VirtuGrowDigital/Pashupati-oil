@@ -12,7 +12,8 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import AboutUs from "./components/About";
-import ScrollToTop from "./components/ScrollToTop"; // ✅ import
+import ScrollToTop from "./components/ScrollToTop"; 
+import WhatsAppButton from "./components/WhatsAppButton"; // ✅ Floating button
 
 // ✅ Scroll handler for Bulk Order + Contact
 const ScrollHandler = () => {
@@ -24,8 +25,11 @@ const ScrollHandler = () => {
       if (section) {
         const yOffset = -120; // adjust for navbar
         const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
         setTimeout(() => {
           window.scrollTo({ top: y, behavior: "smooth" });
+          // ✅ Clear state so refresh doesn’t trigger again
+          window.history.replaceState({}, document.title);
         }, 300);
       }
     }
@@ -33,10 +37,13 @@ const ScrollHandler = () => {
     if (location.state?.scrollToContact) {
       const section = document.getElementById("contact");
       if (section) {
-        const yOffset = -80; // offset so footer doesn’t hide under navbar
+        const yOffset = -80;
         const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
         setTimeout(() => {
           window.scrollTo({ top: y, behavior: "smooth" });
+          // ✅ Clear state so refresh doesn’t trigger again
+          window.history.replaceState({}, document.title);
         }, 300);
       }
     }
@@ -48,7 +55,7 @@ const ScrollHandler = () => {
 function App() {
   return (
     <Router>
-      <ScrollToTop /> {/* ✅ Reset scroll on route change */}
+      <ScrollToTop /> 
       <Navbar />
       <ScrollHandler />
 
@@ -91,6 +98,9 @@ function App() {
       </Routes>
 
       <Footer />
+
+      {/* ✅ Floating WhatsApp button */}
+      <WhatsAppButton />
     </Router>
   );
 }

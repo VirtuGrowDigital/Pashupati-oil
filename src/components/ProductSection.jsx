@@ -35,7 +35,7 @@ const products = [
 
 const ProductSection = () => {
   return (
-    <section className="bg-[#5E7141] py-20">
+    <section id="products" className="bg-[#5E7141] py-20">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="flex justify-between items-center mb-10">
@@ -46,7 +46,7 @@ const ProductSection = () => {
             Product
           </h2>
           <button className="border border-white text-white px-4 py-2 rounded-lg hover:bg-white hover:text-[#5E7141] transition">
-            Follow on Instagram
+          <a href="https://www.instagram.com/pashupati_food_agro/">  Follow on Instagram</a>
           </button>
         </div>
 
@@ -103,7 +103,7 @@ const ProductSection = () => {
         {/* Bulk Order Button */}
         <div id="bulk-order" className="flex justify-center">
           <a
-            href={`https://wa.me/${whatsappNumber}?text=Hi, I want to place a bulk order`}
+            href={`https://wa.me/${9208468980}?text=Hi, I want to place a bulk order`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:scale-105 transition animate-pulse"

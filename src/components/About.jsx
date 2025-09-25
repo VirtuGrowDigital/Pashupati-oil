@@ -29,9 +29,9 @@ const AboutUs = () => {
           </p>
 
           {/* Button */}
-          <button className="flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition">
+          {/* <button className="flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:scale-105 transition">
             Know More →
-          </button>
+          </button> */}
         </div>
 
         {/* Right Content (Images aligned like screenshot) */}
