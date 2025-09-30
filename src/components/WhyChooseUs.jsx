@@ -48,14 +48,14 @@ const WhyChooseUs = () => {
           <div className="flex items-center justify-center gap-3">
             <h3 className="text-green-700 font-bold text-xl">01</h3>
             <p className="text-gray-700">
-              <span className="font-semibold">Pure & Natural</span> – 100% wood-pressed,
+              <span className="font-semibold">Pure & Natural</span> – Wood-pressed,
               chemical-free oils.
             </p>
           </div>
           <div className="flex items-center justify-center gap-3">
             <h3 className="text-green-700 font-bold text-xl">02</h3>
             <p className="text-gray-700">
-              <span className="font-semibold">Traditional Process</span> – Cold-pressed
+              <span className="font-semibold">Traditional Process</span> – Wood-pressed
               using age-old methods to retain nutrients.
             </p>
           </div>
@@ -64,6 +64,18 @@ const WhyChooseUs = () => {
             <p className="text-gray-700">
               <span className="font-semibold">Quality Assurance</span> – Hygienically
               packed for freshness and long shelf life.
+            </p>
+          </div>
+          <div className="flex items-center justify-center gap-3">
+            <h3 className="text-green-700 font-bold text-xl">03</h3>
+            <p className="text-gray-700">
+              <span className="font-semibold">Save Money</span> –Less consumption compared to other oils.
+            </p>
+          </div>
+          <div className="flex items-center justify-center gap-3">
+            <h3 className="text-green-700 font-bold text-xl">03</h3>
+            <p className="text-gray-700">
+              <span className="font-semibold">Health Assurance</span> – Good for health and immunity.
             </p>
           </div>
         </div>
