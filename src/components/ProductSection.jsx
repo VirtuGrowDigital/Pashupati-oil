@@ -11,7 +11,7 @@ const products = [
     image: product1,
     reviews: 5,
     description: [
-      "Cold-Pressed & Nutrient-Rich.",
+      "Wood-Pressed & Nutrient-Rich.",
       "Rich in MUFA, PUFA, Omega 3 & 6",
       "Acts as Natural Sunscreen & Anti-Aging Aid",
     ],
