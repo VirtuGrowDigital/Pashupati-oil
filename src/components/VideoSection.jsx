@@ -25,7 +25,7 @@ const VideoSection = () => {
           videoSrc={video2}
           thumbnail={thumb2}
           title="Purity begins on the farm – experience it in every drop."
-          description="Organic Mustard Oil is Pure, Cold-Pressed, And Chemical-Free. Crafted To Preserve Natural Nutrients And Antioxidants."
+          description="Organic Mustard Oil is Pure, Wood-Pressed, And Chemical-Free. Crafted To Preserve Natural Nutrients And Antioxidants."
           tag="1L"
         />
       </div>
