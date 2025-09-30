@@ -67,13 +67,13 @@ const WhyChooseUs = () => {
             </p>
           </div>
           <div className="flex items-center justify-center gap-3">
-            <h3 className="text-green-700 font-bold text-xl">03</h3>
+            <h3 className="text-green-700 font-bold text-xl">04</h3>
             <p className="text-gray-700">
               <span className="font-semibold">Save Money</span> –Less consumption compared to other oils.
             </p>
           </div>
           <div className="flex items-center justify-center gap-3">
-            <h3 className="text-green-700 font-bold text-xl">03</h3>
+            <h3 className="text-green-700 font-bold text-xl">05</h3>
             <p className="text-gray-700">
               <span className="font-semibold">Health Assurance</span> – Good for health and immunity.
             </p>
