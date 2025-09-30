@@ -27,7 +27,7 @@ const TaglineStrip = () => {
         <span className="text-yellow-500 text-lg sm:text-xl">✦</span>
 
         <p className="text-xs sm:text-sm md:text-lg font-semibold text-[#5E7141]">
-          100% natural Ingredients
+          natural Ingredients
         </p>
       </div>
     </div>
