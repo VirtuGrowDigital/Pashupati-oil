@@ -20,11 +20,11 @@ const products = [
   },
   {
     id: 2,
-    name: "Wood Pressed Mustard Oil (1L)",
+    name: "Wood-Pressed Mustard Oil (1L)",
     image: product2,
     reviews: 5,
     description: [
-      "Cold-Pressed & Nutrient-Rich.",
+      "Wood-Pressed & Nutrient-Rich.",
       "Rich in MUFA, PUFA, Omega 3 & 6",
       "Acts as Natural Sunscreen & Anti-Aging Aid",
     ],
