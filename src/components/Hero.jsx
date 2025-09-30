@@ -43,7 +43,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-sm font-extralight sm:text-base md:text-xl text-gray-200 leading-relaxed max-w-lg">
-          राजस्थान के चुनिंदा खेतों से आपकी रसोई तक <br/>
+          <h3 className="font-bold">राजस्थान के चुनिंदा खेतों से आपकी रसोई तक</h3> <br/>
          Best Cooking Oil Company in Lucknow, proudly offers pure wood-pressed
           mustard oil made using traditional methods. Rich in nutrients, natural aroma,
           and authentic taste, our oil ensures purity and health in every drop, making 
