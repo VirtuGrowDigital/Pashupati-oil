@@ -34,17 +34,20 @@ const Hero = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h2
+        <h1
           className="text-2xl sm:text-3xl md:text-5xl font-light leading-snug"
           style={{ fontFamily: "Manjari, sans-serif" }}
         >
-          राजस्थान के चुनिंदा खेतों से आपकी रसोई तक
-        </h2>
+          Best Cooking Oil Company in Lucknow
+          
+        </h1>
 
         <p className="text-sm font-extralight sm:text-base md:text-xl text-gray-200 leading-relaxed max-w-lg">
-          Pashupati Food brings you pure wood-pressed mustard oil, crafted
-          through traditional methods that preserve nutrients, aroma, and
-          authentic taste.
+          राजस्थान के चुनिंदा खेतों से आपकी रसोई तक
+         Best Cooking Oil Company in Lucknow, proudly offers pure wood-pressed
+          mustard oil made using traditional methods. Rich in nutrients, natural aroma,
+          and authentic taste, our oil ensures purity and health in every drop, making 
+          it the perfect choice for cooking, wellness, and everyday use.
         </p>
 
         <div className="flex space-x-4 sm:space-x-6 pt-6">
