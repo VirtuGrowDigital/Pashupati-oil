@@ -15,12 +15,12 @@ const products = [
       "Rich in MUFA, PUFA, Omega 3 & 6",
       "Acts as Natural Sunscreen & Anti-Aging Aid",
     ],
-    price: 899,
-    originalPrice: 1200,
+    price: 1699,
+    originalPrice:2199,
   },
   {
     id: 2,
-    name: "Wood Pressed Mustard Oil (200ml)",
+    name: "Wood Pressed Mustard Oil (1L)",
     image: product2,
     reviews: 5,
     description: [
@@ -28,8 +28,8 @@ const products = [
       "Rich in MUFA, PUFA, Omega 3 & 6",
       "Acts as Natural Sunscreen & Anti-Aging Aid",
     ],
-    price: 199,
-    originalPrice: 300,
+    price: 349,
+    originalPrice: 449,
   },
 ];
 
