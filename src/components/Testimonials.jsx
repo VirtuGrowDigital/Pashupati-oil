@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
         />
         <TestimonialCard
           image={user2}
-          text="The quality of the rice and oils is unmatched. Pashupati is our go-to supplier for all our needs."
+          text="The quality of the oils is unmatched. Pashupati is our go-to supplier for all our needs."
           extraClass="md:mt-30" // 👈 only offset on desktop
         />
         <TestimonialCard
