@@ -128,6 +128,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
             className="text-lg text-white font-semibold cursor-pointer"
           >
+            
             ABOUT US
           </Link>
           <button
