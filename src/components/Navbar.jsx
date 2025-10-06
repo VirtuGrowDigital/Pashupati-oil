@@ -10,7 +10,7 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // detect scroll for fade effect
+  // ✅ Detect scroll for fade + top position
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -19,7 +19,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // HOME scroll handler
+  // ✅ Scroll Handlers
   const handleHomeClick = () => {
     if (location.pathname !== "/") {
       navigate("/");
@@ -29,13 +29,10 @@ const Navbar = () => {
     }
   };
 
-  // BULK ORDER scroll handler
-  const scrollToBulkOrder = () => {
-    const section = document.getElementById("bulk-order");
+  const scrollToSection = (id, offset = -120) => {
+    const section = document.getElementById(id);
     if (section) {
-      const yOffset = -120;
-      const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + offset;
       window.scrollTo({ top: y, behavior: "smooth" });
       setIsOpen(false);
     }
@@ -45,19 +42,7 @@ const Navbar = () => {
     if (location.pathname !== "/") {
       navigate("/", { state: { scrollToBulk: true } });
     } else {
-      scrollToBulkOrder();
-    }
-  };
-
-  // CONTACT scroll handler
-  const scrollToContact = () => {
-    const section = document.getElementById("contact");
-    if (section) {
-      const yOffset = -80;
-      const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-      setIsOpen(false);
+      scrollToSection("bulk-order");
     }
   };
 
@@ -65,12 +50,15 @@ const Navbar = () => {
     if (location.pathname !== "/") {
       navigate("/", { state: { scrollToContact: true } });
     } else {
-      scrollToContact();
+      scrollToSection("contact", -80);
     }
   };
 
   return (
-    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 w-full max-w-6xl z-50 transition-all duration-500 px-4 sm:px-6 lg:px-8">
+    <div
+      className={`fixed left-1/2 transform -translate-x-1/2 w-full max-w-6xl z-50 transition-all duration-500 px-4 sm:px-6 lg:px-8 
+      ${scrolled ? "top-6" : "top-16"}`}
+    >
       <nav
         className={`rounded-full shadow-lg flex items-center justify-between px-6 sm:px-10 py-3 bg-gradient-to-b from-yellow-400 to-yellow-700 transition-all duration-500 ${
           scrolled ? "opacity-80 backdrop-blur-sm" : "opacity-100"

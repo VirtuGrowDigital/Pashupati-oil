@@ -14,6 +14,8 @@ import Footer from "./components/Footer";
 import AboutUs from "./components/About";
 import ScrollToTop from "./components/ScrollToTop"; 
 import WhatsAppButton from "./components/WhatsAppButton"; // ✅ Floating button
+import DiwaliBanner from "./components/DiwaliBanner";
+import FireworksOverlay from "./components/FireworksOverlay";
 
 // ✅ Scroll handler for Bulk Order + Contact
 const ScrollHandler = () => {
@@ -56,7 +58,9 @@ function App() {
   return (
     <Router>
       <ScrollToTop /> 
+      <DiwaliBanner/>
       <Navbar />
+      <FireworksOverlay/>
       <ScrollHandler />
 
       <Routes>
