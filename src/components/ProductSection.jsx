@@ -101,16 +101,18 @@ const ProductSection = () => {
         </div>
 
         {/* Bulk Order Button */}
-        <div id="bulk-order" className="flex justify-center">
-          <a
-            href={`https://wa.me/${9208468980}?text=Hi, I want to place a bulk order`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:scale-105 transition animate-pulse"
-          >
-            Book Bulk Order
-          </a>
-        </div>
+        {/* Bulk Order Button */}
+<div id="bulk-order" className="flex justify-center">
+  <a
+    href="https://wa.me/message/VTG5NXOH5TYIN1?text=Hi,%20I%20want%20to%20place%20a%20bulk%20order"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:scale-105 transition animate-pulse"
+  >
+    Book Bulk Order
+  </a>
+</div>
+
       </div>
     </section>
   );
