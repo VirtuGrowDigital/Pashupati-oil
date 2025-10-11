@@ -2,16 +2,15 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "919876543210"; // 👈 Replace with your number (no + or spaces)
-
   return (
     <a
-      href={`https://wa.me/${9208468980}?text=Hi, I want to know more about your products.`}
+      href="https://wa.me/message/VTG5NXOH5TYIN1" // ✅ your official WhatsApp Business short link
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 z-50"
+      aria-label="Chat on WhatsApp"
     >
-      <FaWhatsapp size={32} />
+      <FaWhatsapp size={30} />
     </a>
   );
 };
